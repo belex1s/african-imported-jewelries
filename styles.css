@@ -1,23 +1,36 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #87CEEB; /* Light blue background */
+    color: #000; /* Black text color */
 }
+
+/* Header Styles */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #333; /* Dark background for header */
+    color: #fff; /* White text color for header */
     padding: 1em;
     text-align: center;
 }
+
+/* Section Styles */
 section {
     padding: 1em;
 }
+
 .product {
     margin-bottom: 1em;
 }
+
+/* Footer Styles */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #333; /* Dark background for footer */
+    color: #fff; /* White text color for footer */
     padding: 1em;
     text-align: center;
+    position: fixed; /* Fixed position at the bottom */
+    width: 100%; /* Full width */
+    bottom: 0; /* At the bottom of the page */
 }
