@@ -5,6 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>African Imported Jewelries and More</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .welcome {
+            background: url('https://png.pngtree.com/background/20230612/original/pngtree-african-beautiful-woman-with-beaded-tribal-jewelry-picture-image_3176707.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 4em 0;
+        }
+        .products {
+            padding: 2em;
+            background-color: #fff;
+            text-align: center;
+        }
+        .products h2 {
+            margin-bottom: 1em;
+        }
+        .product {
+            display: inline-block;
+            margin: 1em;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 2em 0;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+        }
+        .footer-section h3 {
+            margin-top: 0;
+        }
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin: 0.5em 0;
+        }
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-bottom {
+            text-align: center;
+            margin-top: 1em;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+        }
+        .login-form {
+            text-align: center;
+            margin: 2em 0;
+        }
+        .login-form input[type="text"], .login-form input[type="password"] {
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+        }
+        .login-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+        }
+        .search-bar {
+            text-align: center;
+            margin: 2em 0;
+        }
+        .search-bar input[type="text"] {
+            padding: 10px;
+            width: 300px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+        }
+        .cart {
+            text-align: center;
+            margin: 2em 0;
+        }
+        .cart table {
+            margin: 0 auto;
+            width: 80%;
+            border-collapse: collapse;
+        }
+        .cart table, .cart th, .cart td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .cart th {
+            background-color: #333;
+            color: white;
+        }
+        .cart td img {
+            width: 50px;
+            height: 50px;
+        }
+        .payment-methods {
+            text-align: center;
+            margin: 2em 0;
+        }
+        .payment-methods img {
+            width: 50px;
+            height: 30px;
+            margin: 0 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,14 +160,74 @@
         <h1>Welcome to African Imported Jewelries and More</h1>
     </section>
     
+    <div class="login-form">
+        <h2>Login</h2>
+        <form action="#">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
+    <div class="search-bar">
+        <h2>Search Products</h2>
+        <form action="#">
+            <input type="text" placeholder="Search for jewelry">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    
     <section class="products">
         <h2>Our Products</h2>
         <div class="product">
-            <img src="images/jewelry1.jpg" alt="Jewelry 1" onerror="this.onerror=null;this.src='images/placeholder.png';">
+            <img src="https://png.pngtree.com/background/20230612/original/pngtree-african-beautiful-woman-with-beaded-tribal-jewelry-picture-image_3176707.jpg" alt="Jewelry 1" onerror="this.onerror=null;this.src='images/placeholder.png';">
             <p>Beautiful handcrafted jewelry from Africa.</p>
         </div>
+        <div class="product">
+            <img src="images/jewelry2.jpg" alt="Jewelry 2" onerror="this.onerror=null;this.src='images/placeholder.png';">
+            <p>Elegant African bead necklaces.</p>
+        </div>
+        <div class="product">
+            <img src="images/jewelry3.jpg" alt="Jewelry 3" onerror="this.onerror=null;this.src='images/placeholder.png';">
+            <p>Traditional African bracelets.</p>
+        </div>
     </section>
-
+    
+    <div class="cart">
+        <h2>Shopping Cart</h2>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td><img src="https://png.pngtree.com/background/20230612/original/pngtree-african-beautiful-woman-with-beaded-tribal-jewelry-picture-image_3176707.jpg" alt="Jewelry 1"></td>
+                <td>Jewelry 1</td>
+                <td>1</td>
+                <td>$50</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td><img src="images/jewelry2.jpg" alt="Jewelry 2"></td>
+                <td>Jewelry 2</td>
+                <td>2</td>
+                <td>$30</td>
+                <td>$60</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="payment-methods">
+        <h2>Payment Methods</h2>
+        <p>We accept the following payment methods:</p>
+        <img src="images/credit-card.png" alt="Credit Card">
+        <img src="images/debit-card.png" alt="Debit Card">
+        <img src="images/zelle.png" alt="Zelle">
+    </div>
+    
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -61,9 +259,9 @@
                 </form>
                 <div class="social-icons">
                     <a href="#"><img src="https://www.freeiconspng.com/uploads/logo-facebook-png-free-download-29.png" alt="Facebook" onerror="this.onerror=null;this.src='images/placeholder.png';"></a>
-                    <a href="#"><img src="images/instagram-icon.png" alt="Instagram" onerror="this.onerror=null;this.src='images/placeholder.png';"></a>
-                    <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn" onerror="this.onerror=null;this.src='images/placeholder.png';"></a>
-                    <a href="#"><img src="images/pinterest-icon.png" alt="Pinterest" onerror="this.onerror=null;this.src='images/placeholder.png';"></a>
+                    <a href="https://commons.wikimedia.org/wiki/File:Instagram_icon.png"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram" onerror="this.onerror=null;this.src='images/placeholder.png';"></a>
+                    <a href="https://commons.wikimedia.org/wiki/File:LinkedIn_logo_initials.png"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/480px-LinkedIn_logo_initials.png" alt="LinkedIn" onerror="this.onerror=null;this.src='images/placeholder.png';"></a>
+                    <a href="https://commons.wikimedia.org/wiki/File:Pinterest-logo.png"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="Pinterest" onerror="this.onerror=null;this.src='images/placeholder.png';"></a>
                 </div>
             </div>
         </div>
