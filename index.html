@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>African Imported Jewelries and More</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,6 +20,7 @@
         nav ul {
             list-style: none;
             padding: 0;
+            text-align: center;
         }
         nav ul li {
             display: inline;
@@ -48,7 +49,7 @@
             margin: 1em;
         }
         .product img {
-            width: 200px; /* Adjust the width to reduce the size by one-third */
+            width: 200px;
             height: auto;
         }
         footer {
@@ -195,7 +196,7 @@
     
     <div class="cart">
         <h2>Shopping Cart</h2>
-        <table>
+        <table class="table table-striped">
             <tr>
                 <th>Product</th>
                 <th>Name</th>
@@ -269,5 +270,24 @@
             <p>&copy; 2024 African Imported Jewelries and More. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const infoButton = document.createElement("button");
+            infoButton.className = "btn btn-primary";
+            infoButton.innerText = "Click here for upcoming deals and holidays!";
+            infoButton.style.margin = "20px auto";
+            infoButton.style.display = "block";
+
+            infoButton.addEventListener("click", function() {
+                alert("Upcoming Deals: \n\n- Black Friday Sale: 25% off on all items!\n- Cyber Monday: Buy one get one free!\n\nUpcoming Holidays:\n\n- Christmas: Special discounts on all jewelry!");
+            });
+
+            document.body.insertBefore(infoButton, document.querySelector(".login-form"));
+        });
+    </script>
 </body>
 </html>
